@@ -7,7 +7,7 @@ export function Footer() {
             <div className="container py-12">
                 <div className="grid gap-8 lg:grid-cols-3">
                     <div>
-                        <h3 className="mb-4 text-lg font-semibold">Reciclap</h3>
+                        <h3 className="mb-4 text-lg font-semibold">EcoKausa</h3>
                         <p className="text-sm text-gray-600">
                             Transformando el futuro a través del reciclaje y la economía circular.
                         </p>
@@ -50,7 +50,7 @@ export function Footer() {
                 </div>
                 <div className="mt-8 border-t pt-8 text-center">
                     <p className="text-sm text-gray-600">
-                        © {new Date().getFullYear()} Reciclap. Todos los derechos reservados.
+                        © {new Date().getFullYear()} EcoKausa. Todos los derechos reservados.
                     </p>
                 </div>
             </div>

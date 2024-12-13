@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { Recycle } from 'lucide-react'
-
 export function Hero() {
     return (
         <section className="relative overflow-hidden bg-gradient-to-b from-white to-emerald-300 py-24">
@@ -10,18 +7,11 @@ export function Hero() {
                         Transformando residuos en oportunidades
                     </h1>
                     <p className="mb-8 text-lg text-gray-600 sm:text-xl">
-                        En Reciclap, convertimos los desafíos ambientales en soluciones sostenibles.
-                        Únete a nosotros en el camino hacia un futuro más verde.
+                        EcoKausa es una plataforma innovadora que conecta ciudadanos, recicladores, centros de acopio y empresas para
+                        facilitar la gestión de residuos reciclables. Nuestra misión es transformar el reciclaje en Perú mediante la formalización,
+                        la sostenibilidad y el fomento de la economía circular.
                     </p>
-                    <div className="flex justify-center gap-4">
-                        <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-                            Conoce nuestros productos
-                        </Button>
-                        <Button size="lg" variant="outline" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50">
-                            <Recycle className="mr-2 h-4 w-4" />
-                            Aprende a reciclar
-                        </Button>
-                    </div>
+
                 </div>
             </div>
             <div className="absolute inset-0 bg-[url('/eco-pattern.svg')] opacity-5" />

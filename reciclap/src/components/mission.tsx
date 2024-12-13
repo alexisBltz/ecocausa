@@ -15,9 +15,8 @@ export function Mission() {
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Nuestra misión es liderar la transformación hacia una economía circular,
-                                proporcionando soluciones innovadoras de reciclaje que beneficien tanto
-                                al medio ambiente como a nuestra comunidad.
+                                Facilitar la gestión sostenible de residuos reciclables, promoviendo la formalización de recicladores,
+                                fomentando la economía circular y generando impacto positivo en comunidades, empresas y el medio ambiente.
                             </p>
                         </CardContent>
                     </Card>
@@ -30,9 +29,8 @@ export function Mission() {
                         </CardHeader>
                         <CardContent>
                             <p className="text-gray-600">
-                                Aspiramos a ser referentes globales en sostenibilidad, creando un mundo
-                                donde el reciclaje sea parte integral de la vida cotidiana y donde cada
-                                residuo se convierta en una nueva oportunidad.
+                                Ser la plataforma líder en la gestión de residuos reciclables en América Latina,
+                                generando un cambio significativo hacia un futuro sostenible, inclusivo y responsable.
                             </p>
                         </CardContent>
                     </Card>

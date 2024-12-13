@@ -49,7 +49,7 @@ export function ContactForm() {
     return (
         <section id="contact" className="py-24 bg-white">
             <div className="container max-w-2xl">
-                <h2 className="mb-12 text-center text-3xl font-bold">Contáctanos</h2>
+                <h2 className="mb-12 text-center text-3xl font-bold">Unete a nosotros</h2>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                         <FormField
@@ -57,7 +57,7 @@ export function ContactForm() {
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Nombre</FormLabel>
+                                    <FormLabel>Nombres Completos</FormLabel>
                                     <FormControl>
                                         <Input placeholder="Tu nombre" {...field} />
                                     </FormControl>
@@ -86,7 +86,7 @@ export function ContactForm() {
                                     <FormLabel>Mensaje</FormLabel>
                                     <FormControl>
                                         <Textarea
-                                            placeholder="¿En qué podemos ayudarte?"
+                                            placeholder="¿En qué podemos ayudarte?, estamos atentos las 24h"
                                             className="min-h-[120px]"
                                             {...field}
                                         />
@@ -96,7 +96,7 @@ export function ContactForm() {
                             )}
                         />
                         <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
-                            Enviar mensaje
+                            Enviar mensaje a WhatsApp
                         </Button>
                     </form>
                 </Form>
