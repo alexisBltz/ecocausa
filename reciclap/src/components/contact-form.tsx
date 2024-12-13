@@ -39,7 +39,7 @@ export function ContactForm() {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         // Construir el mensaje para WhatsApp
-        const message = `*Estoy muy interesado en Reciclap, estos son mis datos, quiero reciclar/negociar*\n\nNombre: ${values.name}\nEmail: ${values.email}\nMensaje: ${values.message}`
+        const message = `*Estoy muy interesado en formar parte de EcoKausa estos son mis datos, quiero reciclar/negociar*\n\nNombre: ${values.name}\nEmail: ${values.email}\nMensaje: ${values.message}`
 
         const whatsappURL = `https://wa.me/936224203?text=${encodeURIComponent(message)}`
 
