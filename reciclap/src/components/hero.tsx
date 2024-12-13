@@ -3,7 +3,7 @@ import { Recycle } from 'lucide-react'
 
 export function Hero() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-white to-emerald-50 py-24">
+        <section className="relative overflow-hidden bg-gradient-to-b from-white to-emerald-300 py-24">
             <div className="container relative z-10 mx-auto px-4">
                 <div className="mx-auto max-w-3xl text-center">
                     <h1 className="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
