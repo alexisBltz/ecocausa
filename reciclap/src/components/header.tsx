@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuRef = useRef(null);
+    const menuRef = useRef<HTMLDivElement>(null);
 
     // Cerrar el menú si el usuario hace clic fuera de él
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setIsMenuOpen(false);
             }
         };
