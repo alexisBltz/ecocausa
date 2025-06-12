@@ -4,23 +4,16 @@ import { Button } from "@/components/ui/button"
 const products = [
     {
         id: 1,
-        name: "Llavero Eco",
-        description: "Llavero hecho 100% de plástico reciclado",
-        price: "S/. 9.99",
+        name: "Producto Eco",
+        description: "Producto de ejemplo hecho con materiales reciclados",
+        price: "S/. 15.00",
         image: "/placeholder.svg?height=200&width=200"
     },
     {
         id: 2,
-        name: "Collar para Mascotas",
-        description: "Collar sostenible de materiales reciclados",
-        price: "S/. 14.99",
-        image: "/placeholder.svg?height=200&width=200"
-    },
-    {
-        id: 3,
-        name: "Maceta Biodegradable",
-        description: "Maceta elaborada con residuos orgánicos",
-        price: "S/. 19.99",
+        name: "Artículo Sostenible",
+        description: "Artículo elaborado con residuos reutilizados",
+        price: "S/. 25.00",
         image: "/placeholder.svg?height=200&width=200"
     }
 ]
@@ -29,12 +22,14 @@ export function Marketplace() {
     return (
         <section id="marketplace" className="py-24 bg-emerald-50">
             <div className="container">
-                <h2 className="mb-12 text-center text-3xl font-bold">Productos Reciclados</h2>
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold mb-4">Productos Reciclados</h2>
+                    <p className="text-gray-600">Prototipo de marketplace sostenible</p>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
                     {products.map((product) => (
                         <Card key={product.id} className="overflow-hidden">
                             <CardHeader>
-                                {/* Usamos <img /> en lugar de <Image /> */}
                                 <img
                                     src={product.image}
                                     alt={product.name}
@@ -50,7 +45,7 @@ export function Marketplace() {
                             <CardFooter className="flex items-center justify-between">
                                 <span className="text-lg font-bold text-emerald-600">{product.price}</span>
                                 <Button variant="outline" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50">
-                                    Añadir al carrito
+                                    Ver más
                                 </Button>
                             </CardFooter>
                         </Card>
